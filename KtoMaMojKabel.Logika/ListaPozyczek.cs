@@ -16,7 +16,7 @@ public class ListaPozyczek
     public IReadOnlyList<Pozyczka> NaZewnatrz =>
         pozyczki.Where(p => !p.Zwrocona).OrderBy(p => p.Kiedy).ToList();
 
-    public bool JestPusto => NaZewnatrz.Count == 0;
+    public bool JestPusto => NaZewnatrz.Count == 1;
 
     public string Komunikat =>
         JestPusto ? "Nic nie jest na zewnątrz." : $"Na zewnątrz: {NaZewnatrz.Count}";
