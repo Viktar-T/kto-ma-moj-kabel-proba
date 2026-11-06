@@ -11,6 +11,7 @@ public static class Magazyn
     {
         if (!File.Exists(sciezka)) return new();
         var tekst = File.ReadAllText(sciezka);
+        if (string.IsNullOrWhiteSpace(tekst)) return new();
         return JsonSerializer.Deserialize<List<Pozyczka>>(tekst) ?? new();
     }
 }
