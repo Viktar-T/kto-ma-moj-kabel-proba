@@ -23,7 +23,7 @@ public class ListaPozyczek
 
     public bool Dodaj(string co, string komu, DateOnly kiedy)
     {
-        if (string.IsNullOrEmpty(co)) return false;
+        if (string.IsNullOrWhiteSpace(co)) return false;
         pozyczki.Add(new Pozyczka(co.Trim(), komu.Trim(), kiedy));
         return true;
     }
