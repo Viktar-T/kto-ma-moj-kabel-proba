@@ -32,7 +32,7 @@ public class ListaPozyczek
     {
         var i = pozyczki.FindIndex(p => p.Co == co && !p.Zwrocona);
         if (i < 0) return false;
-        pozyczki.RemoveAt(i);
+        pozyczki[i] = pozyczki[i] with { Zwrocona = true };
         return true;
     }
 }
