@@ -21,6 +21,8 @@ Padł: nie — padły dwa testy ręczne, K4 i K5; ten został zielony
 Werdykt: poprawiony — bo sprawdzał tylko, że lista istnieje i ma dwie pozycje; po poprawce porównuje kolejność nazw i na tym samym zepsuciu pada
 
 ## Przegląd modelu
-Narzędzie i data: (wypełniane po przeglądzie)
-- Uwaga: (wypełniane po przeglądzie) · Kubełek: … · Jak sprawdzone: …
-Czego model nie zauważył, a ty tak: (wypełniane po przeglądzie)
+Narzędzie i data: świeża sesja agenta, 2026-11-06; dostała git diff v2..main (siedem plików, 228 linijek)
+- Uwaga: Zwroc kasuje pożyczkę (RemoveAt) zamiast oznaczyć ją jako zwróconą — punkt 6 konstytucji · Kubełek: trafione · Jak sprawdzone: otwarte ListaPozyczek.cs, metoda Zwroc — prawda; zadanie dla agenta razem z testem ze zgłoszenia 02
+- Uwaga: test K3 ma datę wpisaną na sztywno, nie dowodzi, że okno bierze dzisiejszą · Kubełek: nieistotne · Jak sprawdzone: prawda, ale okno jest w mapie po stronie człowieka, z okazją
+- Uwaga: krok dotnet test buduje na Ubuntu także projekt okna · Kubełek: zmyślone · Jak sprawdzone: log przebiegu na GitHubie — budowane są tylko Logika i Testy
+Czego model nie zauważył, a ty tak: że po Reverse test K5 agenta zostaje zielony — model czytał testy, nie psuł kodu
