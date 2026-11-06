@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="KtoMaMojKabel.Desktop/KtoMaMojKabel.Desktop.csproj" />
+  <Project Path="KtoMaMojKabel.Logika/KtoMaMojKabel.Logika.csproj" />
+</Solution>
